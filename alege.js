@@ -109,7 +109,7 @@ function handleOptionClick(optionValue) {
       document.querySelector(".pozamare").src = "poze/model0.jpeg";
     };
     section.style.display = "grid";
-    bgc2.style.display = "flex";
+    //bgc2.style.display = "flex";
   } else if (optionValue === "option3") {
     comanda.style.display = "block";
     document.querySelector(".pozamare").src =
@@ -262,3 +262,7 @@ function handleOptionClick(optionValue) {
 //     document.querySelector(".pozamare").src = "poze/pexels-photo-3183197.jpeg";
 //   };
 // };
+
+
+//console.log(">>>>", process.env)
+console.log('Service_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);

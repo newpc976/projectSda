@@ -142,6 +142,7 @@ body {
   border-radius: 10px;
   width: 50%;
   height: 350px;
+  object-fit: contain;
 }
 
 .goTop {
