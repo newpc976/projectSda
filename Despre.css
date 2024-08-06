@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("poze/pexels-photo-6790027.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.navigation {
+  position: fixed;
+  background: rgba(31, 78, 7, 0.7);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(245, 139, 10);
+  list-style-type: none;
+}
+.menu {
+  display: none;
+}
+.submenu {
+  border-radius: 0px 15px 0px 15px;
+  border: 4px solid rgb(245, 139, 10);
+  font-size: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 2.5s ease;
+  height: auto;
+  background-color: darkslategrey;
+  width: 200px;
+}
+.submenu p {
+  border-bottom: 2px solid rgb(245, 139, 10);
+}
+.submenu a {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(245, 139, 10);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.close {
+  font-weight: bolder;
+  background-color: khaki;
+  color: red;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 5px;
+  right: 5px;
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+.navigation li:first-child {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+}
+.navigation a {
+  text-decoration: none;
+  color: rgb(245, 139, 10);
+}
+.navigation li {
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+}
+.navigation li:first-child:hover {
+  cursor: pointer;
+}
+.navigation li:nth-child(5) {
+  margin-right: 30px;
+}
+.navigation li:not(:first-child):hover {
+  cursor: pointer;
+  border: 2px solid rgb(3, 22, 83);
+  border-radius: 7px;
+  background-color: rgb(6, 70, 6);
+}
+.navigation li:nth-child(2) {
+  cursor: pointer;
+  border: 2px solid rgb(3, 22, 83);
+  border-radius: 7px;
+  background-color: rgb(6, 70, 6);
+}
+.tree {
+  width: 85px;
+  height: 65px;
+}
+.intro {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 50px;
+  gap: 30px;
+}
+.intro2 {
+  display: flex;
+  margin: 50px;
+  gap: 30px;
+}
+.history {
+  padding: 10px;
+  border-radius: 8%;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  margin: auto;
+  align-content: center;
+  text-align: justify;
+  width: 50%;
+  background: rgba(31, 78, 7, 0.7);
+}
+.house {
+  background-color: burlywood;
+  padding: 50px;
+  border: 5px solid rgb(245, 139, 10);
+  border-radius: 10px;
+  width: 50%;
+  height: 350px;
+}
+
+.goTop {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 50%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(245, 139, 10);
+  color: white;
+  border: 2px solid rgb(3, 22, 83);
+  cursor: pointer;
+}
+.goTop:hover {
+  cursor: pointer;
+  background-color: rgb(6, 70, 6);
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+    background-image: url("poze/pexels-photo-6790027.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menu {
+    display: flex;
+  }
+  .background {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-image: url("poze/pexels-photo-6790027.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navigation li:not(.brand, .menu) {
+    display: none;
+  }
+  .navigation {
+    background: rgba(31, 78, 7, 0.7);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  .navigation li {
+    font-size: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+  }
+  .brand {
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+  }
+  .navigation li:first-child {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+  .navigation li:last-child {
+    margin-right: 10px;
+  }
+  .navigation a {
+    text-decoration: none;
+    color: rgb(245, 139, 10);
+  }
+  .intro2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 30px;
+  }
+  .intro {
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .house {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 70%;
+    margin-top: 20px;
+  }
+  .history {
+    background: rgba(54, 4, 3, 0.7);
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    height: auto;
+  }
+}
