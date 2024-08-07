@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  background-image: url("poze/pexels-photo-4491918.jpeg");
+  background-image: url("/poze/pexels-photo-4491918.jpeg");
   background-repeat: repeat-y;
   background-size: cover;
 }
 
 .background {
   margin: 0;
-  /* background-image: url("poze/pexels-photo-4491918.jpeg");
+  /* background-image: url("/poze/pexels-photo-4491918.jpeg");
   background-repeat: no-repeat;
   background-size: cover; */
 }
@@ -275,7 +275,7 @@ body {
 @media only screen and (max-width: 1000px) {
   body {
     margin: 0;
-    background-image: url("poze/pexels-photo-6790027.jpeg");
+    background-image: url("/poze/pexels-photo-6790027.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
   }
@@ -289,7 +289,7 @@ body {
     height: 50%;
     margin: 0;
 
-    /* background-image: url("poze/pexels-photo-6790027.jpeg");
+    /* background-image: url("/poze/pexels-photo-6790027.jpeg");
     background-repeat: no-repeat;
     background-size: cover; */
   }
@@ -421,7 +421,7 @@ body {
     opacity: 0;
     transition: opacity 2.5s ease;
     z-index: -999;
-    background-image: url("poze/pexels-photo-4491918.jpeg");
+    background-image: url("/poze/pexels-photo-4491918.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
   }
@@ -461,7 +461,7 @@ body {
     opacity: 0;
     transition: opacity 2.5s ease;
     z-index: -999;
-    background-image: url("poze/pexels-photo-4491918.jpeg");
+    background-image: url("/poze/pexels-photo-4491918.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
   }

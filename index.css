@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("poze/pexels-photo-167698.jpeg");
+  background-image: url("/poze/pexels-photo-167698.jpeg");
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -11,7 +11,7 @@ body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  background-image: url("poze/pexels-photo-167698.jpeg");
+  background-image: url("/poze/pexels-photo-167698.jpeg");
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -41,7 +41,7 @@ h1 {
   width: 100%;
   height: auto;
   margin: 0;
-  background-image: url("poze/pexels-photo-167698.jpeg");
+  background-image: url("/poze/pexels-photo-167698.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -190,7 +190,7 @@ h1 {
     width: 100%;
     height: 200vh;
     margin: 0;
-    background-image: url("poze/pexels-photo-167698.jpeg");
+    background-image: url("/poze/pexels-photo-167698.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
   }

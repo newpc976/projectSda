@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background-image: url("poze/bgcContact.jpeg");
+  background-image: url("/poze/bgcContact.jpeg");
   background-repeat: repeat-y;
   background-size: cover;
 }
 
 .background {
-  /* background-image: url("Carpenter/bgc2.png (1).png");
+  /* background-image: url("/Carpenter/bgc2.png (1).png");
   background-repeat: repeat-y;
   background-size: cover; */
 
@@ -234,7 +234,7 @@ body {
   body {
     height: 160vh;
     margin: 0;
-    background-image: url("poze/bgcContact.jpeg");
+    background-image: url("/poze/bgcContact.jpeg");
     background-repeat: repeat-y;
     background-size: auto;
   }
@@ -247,7 +247,7 @@ body {
     flex-direction: column;
     margin: 0;
 
-    /* background-image: url("poze/pexels-photo-6790027.jpeg");
+    /* background-image: url("/poze/pexels-photo-6790027.jpeg");
     background-repeat: no-repeat;
     background-size: cover; */
   }

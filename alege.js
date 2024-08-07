@@ -265,4 +265,6 @@ function handleOptionClick(optionValue) {
 
 
 //console.log(">>>>", process.env)
-console.log('Service_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+console.log('SERVICE_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+console.log('TEMPLATE_ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+console.log('PUBLIC_KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);

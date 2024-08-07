@@ -1,7 +1,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("poze/pexels-photo-6790027.jpeg");
+  background-image: url("/poze/pexels-photo-6790027.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -167,7 +167,7 @@ body {
 @media only screen and (max-width: 1000px) {
   body {
     margin: 0;
-    background-image: url("poze/pexels-photo-6790027.jpeg");
+    background-image: url("/poze/pexels-photo-6790027.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -180,7 +180,7 @@ body {
     flex-direction: column;
     width: 100%;
     margin: 0;
-    background-image: url("poze/pexels-photo-6790027.jpeg");
+    background-image: url("/poze/pexels-photo-6790027.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
   }
