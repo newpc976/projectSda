@@ -65,9 +65,7 @@
             <h1 class="comandaTitle">Trimite-ti comanda dumneavoastra</h1>
             <p>1. Ce categorie ati ales?</p>
             <div class="butoane">
-
-                <form action="/action_page.php">
-
+                <form id="form-category-select">
                     <input type="radio" id="cerdac" name="fav_language" value="Cerdac">
                     <label for="cerdac">Cerdac</label>
                     <input type="radio" id="balcon" name="fav_language" value="balcon">
@@ -78,7 +76,7 @@
             </div>
             <p>2. Ce model ati ales?</p>
             <div class="butoane">
-                <form action="/action_page.php">
+                <form id="form-model-select">
                     <input type="radio" id="Model1" name="fav_language" value="Model1">
                     <label for="Model1">Model 1</label>
                     <input type="radio" id="Model2" name="fav_language" value="Model2">
@@ -94,19 +92,27 @@
                 </form>
             </div>
             <p>3. Cati metri liniari va sunt necesari?</p>
-            <select class="values">
+            <select id="form-qty-select" class="values">
                 <option>Alege de mai jos</option>
-                <option>Intre 3-5m</option>
-                <option>Intre 5-10m</option>
-                <option>Peste 10m</option>
+                <option value="Intre 3-5m">Intre 3-5m</option>
+                <option value="Intre 5-10m">Intre 5-10m</option>
+                <option value="Peste 10m">Peste 10m</option>
             </select>
-            <p class="introduceti">Introduce-ti emailul dumneavoastra: </p>
             <div class="email">
-                <input class="inputEmail" type="email" placeholder="introduce-ti email..."></input>
-                <button class="submit" type="Submit" value="submit">Submit</button>
+                <label for="form-email-input">4. Introduce-ti emailul dumneavoastra: </label>
+                <input id="form-email-input" class="inputEmail" type="email" placeholder="Introduce-ti email..."></input>
             </div>
-
-            <h1 class="comandaTitle">Si va com contacta in cel mai scurt timp!</h1>
+            <div class="email">
+                <label for="form-name-input">5. Introduce-ti numele dumneavoastra: </label>
+                <input id="form-name-input" class="inputEmail" type="text" placeholder="Introduce-ti numele..."></input>
+            </div>
+            <div class="submit-wrapper">
+                <button class="submit" id="submit-order-btn">
+                    <div class="loader" style="display: none;"></div>
+                    Trimite Comanda
+                </button>
+            </div>
+            <h1 class="comandaTitle">Și vă vom contacta în cel mai scurt timp!</h1>
         </div>
 
         <script src="./alege.js" type="module"></script>
