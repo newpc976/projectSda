@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <title>The art of wooding</title>
     <link rel="stylesheet" href="alege.css">
 </head>
+
 <body>
     <div class="dissapear">
         <button class="closeDissapear">X</button>
-            <img class="pozaDissapear" src="poze/model0.jpeg">
-          </div>
-   <div class="background">
-    <nav class="navigation">
-        <li><a class="brand" href="index.html">WoodForEver</a>
-            <img class="tree" src="https://cdn-icons-png.freepik.com/512/7514/7514086.png"/>
-        </li>
-       <li><a href="Despre.html">Despre noi</a></li>
-       <li><a href="proiecte.html"> Proiecte</a></li>
-      <li><a href="alege.html">Alege produsul pentru tine</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="menu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAItJREFUWEft1bEKgDAMRdF0td/bXWe/16yKoFv0QUuhhds1KPEkzyYb7KTB+jEaUhNBCCEloOrz7NCxL6f6mpZ6Lh5ifArR0MM9zw617EfLswgpvb+UrWbWLfq5+BY1R+xflZof4z2ybicXD99PyhQ5QtVC3Pbqth9OSM26V52UKVmEEFICqs4OKaEL/G0pJW6IlX4AAAAASUVORK5CYII="/></li>
-  </nav>
-  
-  <div class="submenu">
-    <button class="close">X</button>
-   <p><a href="Despre.html">Despre noi</a></p>
-   <p><a href="proiecte.html"> Proiecte</a></p>
-   <p><a href="alege.html">Sectiunea alege</a></p>
-   <p><a href="contact.html">Contact</a></p>
-  </div>
-  <select id="select">
-    <option class="optionOne" value="option1">Alege o optiune</option>
-    <option class="optionTwo" value="option2">Cerdac</option>
-    <option class="optionThree" value="option3">Balustrada balcon</option>
-    <option class="optionFour" value="option4">Foisor</option>
-</select>
-
-<div class="section">
-     <div class="firstPicturesSection">
-        <img class="models" id="one" src="poze/075559f44661465b1dc9ddcb603eecb6.jpg"></img>
-        <img class="models" id="three" src="poze/09e0039de3aaa64682e4149ae137d4fe (1).jpg"></img>
-        <img class="models" id="five" src="poze/pexels-photo-217120.jpeg"></img>
-     </div>
-
-     <div class="mainPictureSection">
-     <button class="backtoOne">Undo</button>
-     <img class="pozamare" src="poze/pexels-photo-3183197.jpeg">
-     </div>
-<div class="secondPicturescSection">
-    <img class="models" id="two" src="poze/13a0efd8da925003fb73541eb5280f4e.jpg"></img>
-        <img class="models" id="four" src="poze/pexels-photo-3183197.jpeg"></img>
-        <img class="models" id="six" src="poze/b7e1d7974d450410d480a329ecc6bad0.jpg"></img>
-</div>
- </div>
- <div class="comanda">
-    <h1 class="comandaTitle">Trimite-ti comanda dumneavoastra</h1>
-    <p>1. Ce categorie ati ales?</p>
-    <div class="butoane">
-        
-        <form action="/action_page.php">
-   
-     <input type="radio" id="cerdac" name="fav_language" value="Cerdac">
-    <label for="cerdac">Cerdac</label>
-     <input type="radio" id="balcon" name="fav_language" value="balcon">
-     <label for="balcon">Balcon</label>
-    <input type="radio" id="foisor" name="fav_language" value="foisor">
-    <label for="foisor">Foisor</label></form>
+        <img class="pozaDissapear" src="poze/model0.jpeg">
     </div>
-    <p>2. Ce model ati ales?</p>
-    <div class="butoane">
-        
-        <form action="/action_page.php">
-   
-     <input type="radio" id="Model1" name="fav_language" value="Model1">
-    <label for="Model1">Model 1</label>
-     <input type="radio" id="Model2" name="fav_language" value="Model2">
-     <label for="Model2">Model 2</label>
-    <input type="radio" id="Model3" name="fav_language" value="Model3">
-    <label for="Model3">Model 3</label>
-    <input type="radio" id="Model4" name="fav_language" value="Model4">
-    <label for="Model4">Model 4</label>
-     <input type="radio" id="Model5" name="fav_language" value="Model5">
-     <label for="Model5">Model 5</label>
-    <input type="radio" id="Model6" name="fav_language" value="Model6">
-    <label for="Model6">Model 6</label></form>
-    </div>
-    <p>3. Cati metri liniari va sunt necesari?</p>
-    <select class="values">
-        <option>Alege de mai jos</option>
-        <option>Intre 3-5m</option>
-        <option>Intre 5-10m</option>
-        <option>Peste 10m</option>
-    </select>
-    <p class="introduceti">Introduce-ti emailul dumneavoastra: </p>
-    <div class="email">
-    <input class="inputEmail"  type="email" placeholder="introduce-ti email..."></input>
-    <button class="submit" type="Submit" value="submit">Submit</button>
-</div>
+    <div class="background">
+        <nav class="navigation">
+            <li><a class="brand" href="index.html">WoodForEver</a>
+                <img class="tree" src="https://cdn-icons-png.freepik.com/512/7514/7514086.png" />
+            </li>
+            <li><a href="Despre.html">Despre noi</a></li>
+            <li><a href="proiecte.html"> Proiecte</a></li>
+            <li><a href="alege.html">Alege produsul pentru tine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="menu"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAItJREFUWEft1bEKgDAMRdF0td/bXWe/16yKoFv0QUuhhds1KPEkzyYb7KTB+jEaUhNBCCEloOrz7NCxL6f6mpZ6Lh5ifArR0MM9zw617EfLswgpvb+UrWbWLfq5+BY1R+xflZof4z2ybicXD99PyhQ5QtVC3Pbqth9OSM26V52UKVmEEFICqs4OKaEL/G0pJW6IlX4AAAAASUVORK5CYII=" />
+            </li>
+        </nav>
 
-    <h1 class="comandaTitle">Si va com contacta in cel mai scurt timp!</h1>
- </div>
-   <script src="alege.js"></script>
+        <div class="submenu">
+            <button class="close">X</button>
+            <p><a href="Despre.html">Despre noi</a></p>
+            <p><a href="proiecte.html"> Proiecte</a></p>
+            <p><a href="alege.html">Sectiunea alege</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </div>
+        <select id="select">
+            <option class="optionOne" value="option1">Alege o optiune</option>
+            <option class="optionTwo" value="option2">Cerdac</option>
+            <option class="optionThree" value="option3">Balustrada balcon</option>
+            <option class="optionFour" value="option4">Foisor</option>
+        </select>
+
+        <div class="section">
+            <div class="firstPicturesSection">
+                <img class="models" id="one" src="poze/075559f44661465b1dc9ddcb603eecb6.jpg"></img>
+                <img class="models" id="three" src="poze/09e0039de3aaa64682e4149ae137d4fe (1).jpg"></img>
+                <img class="models" id="five" src="poze/pexels-photo-217120.jpeg"></img>
+            </div>
+
+            <div class="mainPictureSection">
+                <button class="backtoOne">Undo</button>
+                <img class="pozamare" src="poze/pexels-photo-3183197.jpeg">
+            </div>
+            <div class="secondPicturescSection">
+                <img class="models" id="two" src="poze/13a0efd8da925003fb73541eb5280f4e.jpg"></img>
+                <img class="models" id="four" src="poze/pexels-photo-3183197.jpeg"></img>
+                <img class="models" id="six" src="poze/b7e1d7974d450410d480a329ecc6bad0.jpg"></img>
+            </div>
+        </div>
+        <div class="comanda">
+            <h1 class="comandaTitle">Trimite-ti comanda dumneavoastra</h1>
+            <p>1. Ce categorie ati ales?</p>
+            <div class="butoane">
+                <form id="form-category-select">
+                    <input type="radio" id="cerdac" name="fav_language" value="Cerdac">
+                    <label for="cerdac">Cerdac</label>
+                    <input type="radio" id="balcon" name="fav_language" value="balcon">
+                    <label for="balcon">Balcon</label>
+                    <input type="radio" id="foisor" name="fav_language" value="foisor">
+                    <label for="foisor">Foisor</label>
+                </form>
+            </div>
+            <p>2. Ce model ati ales?</p>
+            <div class="butoane">
+                <form id="form-model-select">
+                    <input type="radio" id="Model1" name="fav_language" value="Model1">
+                    <label for="Model1">Model 1</label>
+                    <input type="radio" id="Model2" name="fav_language" value="Model2">
+                    <label for="Model2">Model 2</label>
+                    <input type="radio" id="Model3" name="fav_language" value="Model3">
+                    <label for="Model3">Model 3</label>
+                    <input type="radio" id="Model4" name="fav_language" value="Model4">
+                    <label for="Model4">Model 4</label>
+                    <input type="radio" id="Model5" name="fav_language" value="Model5">
+                    <label for="Model5">Model 5</label>
+                    <input type="radio" id="Model6" name="fav_language" value="Model6">
+                    <label for="Model6">Model 6</label>
+                </form>
+            </div>
+            <p>3. Cati metri liniari va sunt necesari?</p>
+            <select id="form-qty-select" class="values">
+                <option>Alege de mai jos</option>
+                <option value="Intre 3-5m">Intre 3-5m</option>
+                <option value="Intre 5-10m">Intre 5-10m</option>
+                <option value="Peste 10m">Peste 10m</option>
+            </select>
+            <div class="email">
+                <label for="form-email-input">4. Introduce-ti emailul dumneavoastra: </label>
+                <input id="form-email-input" class="inputEmail" type="email" placeholder="Introduce-ti email..."></input>
+            </div>
+            <div class="email">
+                <label for="form-name-input">5. Introduce-ti numele dumneavoastra: </label>
+                <input id="form-name-input" class="inputEmail" type="text" placeholder="Introduce-ti numele..."></input>
+            </div>
+            <div class="submit-wrapper">
+                <button class="submit" id="submit-order-btn">
+                    <div class="loader" style="display: none;"></div>
+                    Trimite Comanda
+                </button>
+            </div>
+            <h1 class="comandaTitle">Și vă vom contacta în cel mai scurt timp!</h1>
+        </div>
+
+        <script src="./alege.js" type="module"></script>
 </body>
+
 </html>

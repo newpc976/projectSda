@@ -1,3 +1,5 @@
+import emailjs from "@emailjs/browser";
+
 let one = document.querySelector("#one");
 let two = document.querySelector("#two");
 let three = document.querySelector("#three");
@@ -109,7 +111,7 @@ function handleOptionClick(optionValue) {
       document.querySelector(".pozamare").src = "poze/model0.jpeg";
     };
     section.style.display = "grid";
-    bgc2.style.display = "flex";
+    //bgc2.style.display = "flex";
   } else if (optionValue === "option3") {
     comanda.style.display = "block";
     document.querySelector(".pozamare").src =
@@ -262,3 +264,66 @@ function handleOptionClick(optionValue) {
 //     document.querySelector(".pozamare").src = "poze/pexels-photo-3183197.jpeg";
 //   };
 // };
+
+
+//console.log(">>>>", process.env)
+// console.log('SERVICE_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+// console.log('TEMPLATE_ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+// console.log('PUBLIC_KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+const categorySelect = document.getElementById("form-category-select");
+const modelSelect = document.getElementById("form-model-select");
+const gtySelect = document.getElementById("form-qty-select");
+const emailInput= document.getElementById("form-email-input");
+const nameInput= document.getElementById("form-name-input");
+const loader = document.querySelector(".loader");
+const formData = {};
+
+categorySelect.addEventListener("change", (e) => {
+  if(e.target.checked)formData.category = e.target.id;
+})
+
+modelSelect.addEventListener("change", (e) => {
+  if(e.target.checked)formData.model = e.target.id;
+})
+
+gtySelect.addEventListener("change", (e) => {
+  formData.qty = e.target.value;
+})
+
+emailInput.addEventListener("input", (e) => {
+  formData.email = e.target.value;
+})
+
+nameInput.addEventListener("input", (e) => {
+  formData.name = e.target.value;
+})
+
+
+const sendEmail = () => {
+  loader.style.display = "block"
+  emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, formData)
+   .then(() => {
+    console.log("send ok")
+    alert("Comanda s-a facut cu succes!")
+    loader.style.display = "none"
+   })
+   .catch(error => {
+    console.log(error)
+    loader.style.display = "block"
+   })
+}
+
+const handleSubmitOrder = () => {
+  sendEmail()
+}
+
+const submitOrderBtn = document.getElementById("submit-order-btn");
+
+submitOrderBtn.addEventListener("click", handleSubmitOrder);
+
+
+window.addEventListener("load", () => {
+  emailjs.init({
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  })
+})
