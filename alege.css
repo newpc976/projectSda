@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("/poze/pexels-photo-4491918.jpeg");
+  background-image: url("public/poze/pexels-photo-4491918.jpeg");
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -23,17 +23,22 @@ body {
   list-style-type: none;
 }
 .dissapear {
+  background-image: url("public/poze/fundal.jpeg");
+  background-repeat: repeat-y;
+  background-size: cover;
   display: none;
   border-radius: 15px;
   position: fixed;
   border: 3px solid darkslategray;
-  width: 90%;
-  height: 80vh;
-}
-.pozaDissapear {
-  border-radius: 15px;
   width: 100%;
   height: 100%;
+}
+.pozaDissapear {
+  margin: auto;
+  border-radius: 15px;
+  width: 80%;
+  height: 80%;
+  border: 20px groove #3b6633;
 }
 .closeDissapear {
   position: absolute;
@@ -154,38 +159,45 @@ body {
   color: red;
 }
 .models {
-  border: 2px solid rgb(255, 174, 74);
+  object-fit: cover;
   border-radius: 0 20px 0 20px;
   cursor: pointer;
   width: 350px;
   height: 300px;
-  background-color: red;
+  box-shadow: rgb(40 12 8) 20px -14px 20px;
+  margin-top: 30px;
 }
 .appearCerdac {
   cursor: pointer;
   background-color: yellow;
 }
 .firstPicturesSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   margin-left: 15px;
 }
 .pozamare {
+  box-shadow: 19px 20px 20px #641f1f;
+  object-fit: cover;
   border: 4px solid darkred;
   border-radius: 0px 20px 0 20px;
-  width: 350;
   height: 300px;
 }
 .secondPicturescSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
   margin-right: 15px;
 }
 .section {
   display: none;
   width: 100%;
-  grid-template-columns: 1fr 2fr 1fr;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 30px;
 }
 .mainPictureSection {
-  margin-top: -40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -193,6 +205,7 @@ body {
 }
 
 .backtoOne {
+  box-shadow: 11px -2px 13px black;
   font-size: 30px;
   cursor: pointer;
   color: yellow;
@@ -200,7 +213,7 @@ body {
   border-radius: 5px;
   border: 2px solid yellow;
   height: 40px;
-  width: 20%;
+  width: min-content;
 }
 .backtoOne:hover {
   color: aqua;
@@ -277,7 +290,8 @@ body {
   background-color: green;
   color: white;
   border: 2px solid sandybrown;
-  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
 }
 .inputEmail::placeholder {
   color: white;
@@ -295,14 +309,18 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   body {
     margin: 0;
-    background-image: url("/poze/pexels-photo-6790027.jpeg");
+    background-image: url("public/poze/pexels-photo-6790027.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
   }
@@ -376,7 +394,6 @@ body {
     display: none;
     width: min-content;
     margin: auto;
-    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -448,7 +465,7 @@ body {
     opacity: 0;
     transition: opacity 2.5s ease;
     z-index: -999;
-    background-image: url("/poze/pexels-photo-4491918.jpeg");
+    background-image: url("public/poze/fundal.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
   }
@@ -458,7 +475,7 @@ body {
     width: 80%;
     height: 85%;
     margin: auto;
-    border: 4px solid red;
+    border: 20px groove #3b6633;
   }
   .comanda {
     display: none;
@@ -476,6 +493,23 @@ body {
     margin: auto;
     font-size: 15px;
   }
+  .firstPicturesSection {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    flex-wrap: wrap;
+  }
+
+  .secondPicturescSection {
+    gap: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 15px;
+    flex-wrap: wrap;
+  }
 }
 @media only screen and (max-width: 500px) {
   .dissapear {
@@ -488,16 +522,16 @@ body {
     opacity: 0;
     transition: opacity 2.5s ease;
     z-index: -999;
-    background-image: url("/poze/pexels-photo-4491918.jpeg");
+    background-image: url("public/poze/fundal.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
   }
   .pozaDissapear {
     border-radius: 15px;
-    width: 80%;
-    height: 85%;
+    width: 90%;
+    height: 55%;
     margin: auto;
-    border: 4px solid red;
+    border: 20px groove #3b6633;
   }
   .section {
     display: none;

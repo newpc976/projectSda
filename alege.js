@@ -6,8 +6,6 @@ let three = document.querySelector("#three");
 let four = document.querySelector("#four");
 let five = document.querySelector("#five");
 let six = document.querySelector("#six");
-let alege = document.querySelector(".alege");
-let backPhoto = document.querySelector(".backtoOne");
 let mainPicture = document.querySelector(".pozamare");
 let section = document.querySelector(".section");
 let mainPictureSection = document.querySelector(".mainPictureSection");
@@ -23,11 +21,9 @@ const body = document.body;
 
 document.addEventListener("DOMContentLoaded", (event) => {
   closeDissapear.onclick = () => {
-    // pozaDissapear.src = "poze/modelUnu.jpeg";
     dissapear.style.opacity = "0";
     dissapear.style.transitionDuration = "1.5s";
-    dissapear.style.zIndex = "-2";
-    mainPicture.src = "poze/modelUnu.jpeg";
+    dissapear.style.zIndex = "-1";
   };
   menu.onclick = () => {
     submenu.style.display = "flex";
@@ -48,224 +44,150 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 function handleOptionClick(optionValue) {
-  console.log(`Selected option: ${optionValue}`);
-  // Add your desired action here based on the selected option
-  // For example:
   if (optionValue === "option1") {
     section.style.display = "none";
-    bgc2.style.display = "none";
     comanda.style.display = "none";
   } else if (optionValue === "option2") {
     comanda.style.display = "block";
-    document.querySelector(".pozamare").src = "poze/model0.jpeg";
-    mainPictureSection.style.justifyContent = "flex-start";
-    one.src = "poze/model1.jpeg";
-    two.src = "poze/13a0efd8da925003fb73541eb5280f4e.jpg";
-    three.src = "poze/09e0039de3aaa64682e4149ae137d4fe (1).jpg";
-    four.src = "poze/pexels-photo-3183197.jpeg";
-    five.src = "Carpenter/carpenter2.jpeg";
-    six.src = "poze/b7e1d7974d450410d480a329ecc6bad0.jpg";
+    one.src = "public/Cerdac/model1.jpeg";
+    two.src = "public/Cerdac/model2.jpeg";
+    three.src = "public/Cerdac/model3.jpeg";
+    four.src = "public/Cerdac/model4.jpeg";
+    five.src = "public/Cerdac/model5.jpeg";
+    six.src = "public/Cerdac/model6.jpeg";
     one.onclick = () => {
-      pozaDissapear.src = "poze/model1.jpeg";
+      dissapear.style.display = "flex";
+      pozaDissapear.src = "public/Cerdac/cerdac,model1.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = "poze/modelUnu.jpeg";
-      mainPictureSection.style.justifyContent = "flex-start";
     };
     two.onclick = () => {
-      pozaDissapear.src = two.src;
+      pozaDissapear.src = "public/Cerdac/cerdac,model2.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = "poze/13a0efd8da925003fb73541eb5280f4e.jpg";
-      mainPictureSection.style.justifyContent = "flex-start";
     };
     three.onclick = () => {
-      pozaDissapear.src = three.src;
+      pozaDissapear.src = "public/Cerdac/cerdac,model3.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = "poze/09e0039de3aaa64682e4149ae137d4fe (1).jpg";
-      mainPictureSection.style.justifyContent = "center";
     };
     four.onclick = () => {
-      pozaDissapear.src = four.src;
+      pozaDissapear.src = "public/Cerdac/cerdac,model4.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = "poze/pexels-photo-3183197.jpeg";
-      mainPictureSection.style.justifyContent = "center";
     };
     five.onclick = () => {
-      pozaDissapear.src = five.src;
+      pozaDissapear.src = "public/Cerdac/cerdac,model5.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = five.src;
-      mainPictureSection.style.justifyContent = "flex-end";
     };
     six.onclick = () => {
-      pozaDissapear.src = six.src;
+      pozaDissapear.src = "public/Cerdac/cerdac,model6.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = "poze/b7e1d7974d450410d480a329ecc6bad0.jpg";
-      mainPictureSection.style.justifyContent = "flex-end";
     };
-    backPhoto.onclick = () => {
-      document.querySelector(".pozamare").src = "poze/model0.jpeg";
-    };
-    section.style.display = "grid";
-    //bgc2.style.display = "flex";
+    section.style.display = "flex";
   } else if (optionValue === "option3") {
     comanda.style.display = "block";
-    document.querySelector(".pozamare").src =
-      "Balustrada/Sabina & Nicolae (1390).jpg";
-    one.src = "ElementeExterior/poza1.jpg";
-    two.src = "ElementeExterior/poza2.jpg";
-    three.src = "ElementeExterior/poza nr 3.jpg";
-    four.src = "ElementeExterior/poza nr4.jpg";
-    five.src = "ElementeExterior/poza nr 5.jpg";
-    six.src = "ElementeExterior/poza nr 6.jpg";
-    mainPictureSection.style.justifyContent = "flex-start";
-
+    one.src = "public/Balustrada/model1.jpeg";
+    two.src = "public/Balustrada/model2.jpeg";
+    three.src = "public/Balustrada/model3.jpeg";
+    four.src = "public/Balustrada/model4.jpeg";
+    five.src = "public/Balustrada/model5.jpeg";
+    six.src = "public/Balustrada/model6.jpeg";
     one.onclick = () => {
-      pozaDissapear.src = "Balustrada/Sabina & Nicolae (1226).jpg";
+      dissapear.style.display = "flex";
+      pozaDissapear.src = "public/Balustrada/balcon,model1.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
       mainPictureSection.style.justifyContent = "flex-start";
-      mainPicture.src = one.src;
-      mainPictureSection.style.justifyContent = "flex-start";
+      mainPicture.src = "public/Balustrada/balcon,model1.jpeg";
     };
     two.onclick = () => {
-      pozaDissapear.src = two.src;
+      pozaDissapear.src = "public/Balustrada/balcon,model2.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = two.src;
-      mainPictureSection.style.justifyContent = "flex-start";
+      mainPicture.src = "public/Balustrada/balcon,model2.jpeg";
+      mainPictureSection.style.justifyContent = "center";
     };
     three.onclick = () => {
-      pozaDissapear.src = three.src;
+      pozaDissapear.src = "public/Balustrada/balcon,model3.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = three.src;
-      mainPictureSection.style.justifyContent = "center";
+      mainPicture.src = "public/Balustrada/balcon,model3.jpeg";
+      mainPictureSection.style.justifyContent = "flex-end";
     };
     four.onclick = () => {
-      pozaDissapear.src = four.src;
+      pozaDissapear.src = "public/Balustrada/balcon,model4.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = four.src;
-      mainPictureSection.style.justifyContent = "center";
+      mainPicture.src = "public/Balustrada/balcon,model4.jpeg";
+      mainPictureSection.style.justifyContent = "flex-start";
     };
     five.onclick = () => {
-      pozaDissapear.src = five.src;
+      pozaDissapear.src = "public/Balustrada/balcon,model5.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = five.src;
-      mainPictureSection.style.justifyContent = "flex-end";
+      mainPicture.src = "public/Balustrada/balcon,model5.jpeg";
+      mainPictureSection.style.justifyContent = "center";
     };
     six.onclick = () => {
-      pozaDissapear.src = six.src;
+      pozaDissapear.src = "public/Balustrada/balcon,model6.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = six.src;
+      mainPicture.src = "public/Balustrada/balcon,model6.jpeg";
       mainPictureSection.style.justifyContent = "flex-end";
     };
-    backPhoto.onclick = () => {
-      document.querySelector(".pozamare").src =
-        "Balustrada/Sabina & Nicolae (1390).jpg";
-      section.style.display = "grid";
-      bgc2.style.display = "flex";
-    };
-    section.style.display = "grid";
+    section.style.display = "flex";
     bgc2.style.display = "flex";
   } else if (optionValue === "option4") {
     comanda.style.display = "block";
-    document.querySelector(".pozamare").src = "foisor/big.jpg";
-    one.src = "ElementeExterior/poza nr 7.jpg";
-    two.src = "ElementeExterior/poza nr 8.jpg";
-    three.src = "ElementeExterior/poza nr 9.jpg";
-    four.src = "ElementeExterior/poza nr 10.jpg";
-    five.src = "ElementeExterior/poza nr 11.jpg";
-    six.src = "ElementeExterior/poza nr 12.jpg";
-
-    mainPictureSection.style.justifyContent = "flex-start";
+    one.src = "public/Foisor/model1.jpeg";
+    two.src = "public/Foisor/model2.jpeg";
+    three.src = "public/Foisor/model3.jpeg";
+    four.src = "public/Foisor/model4.jpeg";
+    five.src = "public/Foisor/model5.jpeg";
+    six.src = "public/Foisor/model6.jpeg";
     one.onclick = () => {
-      pozaDissapear.src = one.src;
+      pozaDissapear.src = "public/Foisor/foisor,model1.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = one.src;
-      mainPictureSection.style.justifyContent = "flex-start";
+      dissapear.style.display = "flex";
     };
     two.onclick = () => {
-      pozaDissapear.src = two.src;
+      pozaDissapear.src = "public/Foisor/foisor,model2.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = two.src;
-      mainPictureSection.style.justifyContent = "flex-start";
+      dissapear.style.display = "flex";
     };
     three.onclick = () => {
-      pozaDissapear.src = three.src;
+      pozaDissapear.src = "public/Foisor/foisor,model3.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = three.src;
-      mainPictureSection.style.justifyContent = "center";
+      dissapear.style.display = "flex";
     };
     four.onclick = () => {
-      pozaDissapear.src = four.src;
+      dissapear.style.display = "flex";
+      pozaDissapear.src = "public/Foisor/foisor,model4.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = four.src;
-      mainPictureSection.style.justifyContent = "center";
     };
     five.onclick = () => {
-      pozaDissapear.src = five.src;
+      dissapear.style.display = "flex";
+      pozaDissapear.src = "public/Foisor/foisor,model5.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = five.src;
-      mainPictureSection.style.justifyContent = "flex-end";
     };
     six.onclick = () => {
-      pozaDissapear.src = six.src;
+      dissapear.style.display = "flex";
+      pozaDissapear.src = "public/Foisor/foisor,model6.jpeg";
       dissapear.style.opacity = "1";
       dissapear.style.zIndex = "1";
-      mainPicture.src = six.src;
-      mainPictureSection.style.justifyContent = "flex-end";
     };
-    backPhoto.onclick = () => {
-      document.querySelector(".pozamare").src = "foisor/big.jpg";
-    };
-    section.style.display = "grid";
+    section.style.display = "flex";
     bgc2.style.display = "flex";
   }
 }
-// window.onload = () => {
-//   one.onclick = () => {
-//     mainPicture.src = one.src;
-//     mainPictureSection.style.justifyContent = "flex-start";
-//   };
-//   two.onclick = () => {
-//     mainPicture.src = two.src;
-//     mainPictureSection.style.justifyContent = "flex-start";
-//   };
-//   three.onclick = () => {
-//     mainPicture.src = three.src;
-//     mainPictureSection.style.justifyContent = "center";
-//   };
-//   four.onclick = () => {
-//     mainPicture.src = four.src;
-//     mainPictureSection.style.justifyContent = "center";
-//   };
-//   five.onclick = () => {
-//     mainPicture.src = five.src;
-//     mainPictureSection.style.justifyContent = "flex-end";
-//   };
-//   six.onclick = () => {
-//     mainPicture.src = six.src;
-//     mainPictureSection.style.justifyContent = "flex-end";
-//   };
-//   backPhoto.onclick = () => {
-//     document.querySelector(".pozamare").src = "poze/pexels-photo-3183197.jpeg";
-//   };
-// };
-
-
 //console.log(">>>>", process.env)
 // console.log('SERVICE_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
 // console.log('TEMPLATE_ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
@@ -273,57 +195,60 @@ function handleOptionClick(optionValue) {
 const categorySelect = document.getElementById("form-category-select");
 const modelSelect = document.getElementById("form-model-select");
 const gtySelect = document.getElementById("form-qty-select");
-const emailInput= document.getElementById("form-email-input");
-const nameInput= document.getElementById("form-name-input");
+const emailInput = document.getElementById("form-email-input");
+const nameInput = document.getElementById("form-name-input");
 const loader = document.querySelector(".loader");
 const formData = {};
 
 categorySelect.addEventListener("change", (e) => {
-  if(e.target.checked)formData.category = e.target.id;
-})
+  if (e.target.checked) formData.category = e.target.id;
+});
 
 modelSelect.addEventListener("change", (e) => {
-  if(e.target.checked)formData.model = e.target.id;
-})
+  if (e.target.checked) formData.model = e.target.id;
+});
 
 gtySelect.addEventListener("change", (e) => {
   formData.qty = e.target.value;
-})
+});
 
 emailInput.addEventListener("input", (e) => {
   formData.email = e.target.value;
-})
+});
 
 nameInput.addEventListener("input", (e) => {
   formData.name = e.target.value;
-})
-
+});
 
 const sendEmail = () => {
-  loader.style.display = "block"
-  emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, formData)
-   .then(() => {
-    console.log("send ok")
-    alert("Comanda s-a facut cu succes!")
-    loader.style.display = "none"
-   })
-   .catch(error => {
-    console.log(error)
-    loader.style.display = "block"
-   })
-}
+  loader.style.display = "block";
+  emailjs
+    .send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formData
+    )
+    .then(() => {
+      console.log("send ok");
+      alert("Comanda s-a facut cu succes!");
+      loader.style.display = "none";
+    })
+    .catch((error) => {
+      console.log(error);
+      loader.style.display = "block";
+    });
+};
 
 const handleSubmitOrder = () => {
-  sendEmail()
-}
+  sendEmail();
+};
 
 const submitOrderBtn = document.getElementById("submit-order-btn");
 
 submitOrderBtn.addEventListener("click", handleSubmitOrder);
 
-
 window.addEventListener("load", () => {
   emailjs.init({
-    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-  })
-})
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  });
+});

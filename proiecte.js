@@ -13,7 +13,6 @@ const poza3 = document.querySelector(".pozaSlide3");
 const poza4 = document.querySelector(".pozaSlide4");
 const poza5 = document.querySelector(".pozaSlide5");
 const poza6 = document.querySelector(".pozaSlide6");
-console.log(width);
 
 window.onload = () => {
   menu.onclick = () => {
@@ -31,8 +30,12 @@ window.onload = () => {
     parere.style.pointerEvents = "none";
   };
   elementeInterior.onclick = () => {
-    poza1.src = "ElementeInterior/poza1.jpg";
-    poza2.src = "ElementeInterior/poza2.jpg";
+    poza1.src = "public/ElementeInterior/poza1.jpg";
+    poza2.src = "public/ElementeInterior/poza2.jpg";
+    poza3.src = "public/ElementeInterior/poza3.jpg";
+    poza4.src = "public/ElementeInterior/poza4.jpg";
+    poza5.src = "public/ElementeInterior/poza5.jpg";
+    poza6.src = "public/ElementeInterior/poza6.jpg";
     parere.style.display = "flex";
     parere.style.pointerEvents = "auto";
   };
@@ -40,12 +43,12 @@ window.onload = () => {
     parere.style.display = "flex";
     parere.style.zIndex = "999";
     parere.style.pointerEvents = "auto";
-    poza1.src = "ElementeExterior/poza nr 1.jpg";
-    poza2.src = "ElementeExterior/poza nr 2.jpg";
-    poza3.src = "ElementeExterior/poza nr 3.jpg";
-    poza4.src = "ElementeExterior/poza nr4.jpg";
-    poza5.src = "ElementeExterior/poza nr 5.jpg";
-    poza6.src = "ElementeExterior/poza nr 6.jpg";
+    poza1.src = "public/ElementeExterior/poza nr 1.jpg";
+    poza2.src = "public/ElementeExterior/poza nr 2.jpg";
+    poza3.src = "public/ElementeExterior/poza nr 3.jpg";
+    poza4.src = "public/ElementeExterior/poza nr4.jpg";
+    poza5.src = "public/ElementeExterior/poza nr 5.jpg";
+    poza6.src = "public/ElementeExterior/poza nr 6.jpg";
   };
 };
 

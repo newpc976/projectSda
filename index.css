@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("/poze/pexels-photo-167698.jpeg");
+  background-image: url("public/poze/pexels-photo-167698.jpeg");
   background-repeat: repeat-y;
   background-size: cover;
 }
